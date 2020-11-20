@@ -1,0 +1,3 @@
+---
+grub_d_files: {}
+grub_d_directory: /etc/default/grub.d

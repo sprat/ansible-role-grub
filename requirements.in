@@ -1,0 +1,3 @@
+molecule[test,lint]
+molecule-vagrant
+python-vagrant

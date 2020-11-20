@@ -1,0 +1,27 @@
+---
+- name: Add grub configuration files
+  become: yes
+  template:
+    src: cfg.j2
+    dest: "{{ grub_d_directory }}/{{ item.key }}.cfg"
+    mode: 0755
+    owner: root
+    group: root
+  when: item.value
+  loop: "{{ grub_d_files | dict2items }}"
+  notify:
+    - Reconfigure grub
+  tags:
+    - grub
+
+- name: Remove grub configuration files
+  become: yes
+  file:
+    path: "{{ grub_d_directory }}/{{ item.key }}.cfg"
+    state: absent
+  when: not item.value
+  loop: "{{ grub_d_files | dict2items }}"
+  notify:
+    - Reconfigure grub
+  tags:
+    - grub

@@ -2,12 +2,16 @@
 os: linux
 dist: bionic
 language: python
+cache:
+  directories:
+    - $HOME/.vagrant.d/boxes/
 env:
   - BOX: ubuntu/focal64
 install:
   - wget -qO- https://raw.githubusercontent.com/sprat/install-scripts/master/install_virtualbox.sh | sudo bash
   - wget -qO- https://raw.githubusercontent.com/sprat/install-scripts/master/install_hashicorp_packages.sh | sudo bash -s vagrant
   - pip install -I -r requirements.in
+  - vagrant box add $BOX
 script:
   - molecule --version
   - molecule test

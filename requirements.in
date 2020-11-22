@@ -1,4 +1,5 @@
 molecule-vagrant
 python-vagrant
 ansible
+ansible-lint
 flake8

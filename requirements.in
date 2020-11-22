@@ -1,3 +1,4 @@
-molecule[test,lint]
 molecule-vagrant
 python-vagrant
+ansible
+flake8

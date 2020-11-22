@@ -1,0 +1,13 @@
+---
+language: python
+env:
+  - BOX: ubuntu/focal64
+install:
+  - wget -qO- ${INSTALL_SCRIPTS_URL}/install_virtualbox.sh | sudo bash
+  - wget -qO- ${INSTALL_SCRIPTS_URL}/install_hashicorp_packages.sh | sudo bash -s vagrant
+  - pip install -I -r requirements.in
+script:
+  - molecule --version
+  - molecule test
+# notifications:
+#   webhooks: https://galaxy.ansible.com/api/v1/notifications/

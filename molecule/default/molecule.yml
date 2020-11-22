@@ -1,0 +1,15 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: vagrant
+  provider:
+    name: virtualbox
+lint: yamllint . && ansible-lint . && flake8
+platforms:
+  - name: instance
+    box: ${BOX:-ubuntu/focal64}
+provisioner:
+  name: ansible
+verifier:
+  name: testinfra

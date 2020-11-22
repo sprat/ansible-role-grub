@@ -1,4 +1,6 @@
 ---
+os: linux
+dist: bionic
 language: python
 env:
   - BOX: ubuntu/focal64

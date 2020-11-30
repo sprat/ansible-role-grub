@@ -13,6 +13,6 @@ install:
   - pip install -I -r requirements.in
 script:
   - molecule --version
-  - molecule test -vv
+  - molecule -vv test
 # notifications:
 #   webhooks: https://galaxy.ansible.com/api/v1/notifications/

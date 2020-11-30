@@ -4,7 +4,6 @@
   vars:
     grub_d_files:
       98-audit:
-        GRUB_CMDLINE_LINUX_DEFAULT: $GRUB_CMDLINE_LINUX_DEFAULT audit=1
       99-docker:
         GRUB_CMDLINE_LINUX_DEFAULT: $GRUB_CMDLINE_LINUX_DEFAULT cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1 swapaccount=1
 

@@ -1,0 +1,9 @@
+---
+- name: Prepare
+  hosts: all
+  tasks:
+    - name: Create a config file to delete
+      become: yes
+      copy:
+        content: "$GRUB_CMDLINE_LINUX_DEFAULT audit=1"
+        dest: "/etc/default/grub.d/98-audit.cfg"

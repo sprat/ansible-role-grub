@@ -12,7 +12,7 @@ galaxy_info:
         - all
     - name: Debian
       versions:
-        - all
+        - buster
   galaxy_tags:
     - grub
     - kernel

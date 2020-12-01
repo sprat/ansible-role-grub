@@ -17,4 +17,6 @@ def test_grub_d_files(host):
 def test_grub_config_regenerated(host):
     """Check that the grub config is regenerated"""
     grub_cfg = host.file('/boot/grub/grub.cfg')
-    assert grub_cfg.contains(' cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1 swapaccount=1 ')
+    assert grub_cfg.contains(
+        ' cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1 swapaccount=1 '
+    )

@@ -17,5 +17,5 @@ install:
 script:
   - molecule --version
   - molecule -v test
-# notifications:
-#   webhooks: https://galaxy.ansible.com/api/v1/notifications/
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/

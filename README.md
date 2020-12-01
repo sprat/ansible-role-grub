@@ -26,6 +26,7 @@ Example Playbook
 
 ```yaml
 - hosts: server
+  vars:
   roles:
     - role: sprat.grub
 ```

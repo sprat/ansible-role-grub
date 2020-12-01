@@ -4,7 +4,7 @@ Ansible Role: grub
 [![Ansible Galaxy][galaxy_image]][galaxy_link]
 [![Build Status][travis_image]][travis_link]
 
-Configure Grub on Ubuntu or Debian
+Configure Grub on Ubuntu or Debian using the `/etc/default/grub.d` directory.
 
 Requirements
 ------------

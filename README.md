@@ -27,6 +27,10 @@ Example Playbook
 ```yaml
 - hosts: server
   vars:
+    grub_d_files:
+      98-docker:  # file to remove if present
+      99-audit:
+        GRUB_CMDLINE_LINUX_DEFAULT: $GRUB_CMDLINE_LINUX_DEFAULT audit=1
   roles:
     - role: sprat.grub
 ```

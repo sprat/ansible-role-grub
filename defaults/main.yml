@@ -1,3 +1,12 @@
 ---
 grub_d_files: {}
+# List of files to add or remove from grub.d directory (see below), with the environment variables
+# that each file should contain.
+# For example:
+# grub_d_files:
+#   98-other:  # file to remove
+#   99-audit:  # file to add, with the following env variable
+#     GRUB_CMDLINE_LINUX_DEFAULT: $GRUB_CMDLINE_LINUX_DEFAULT audit=1
+
 grub_d_directory: /etc/default/grub.d
+# path to the grub.d directory

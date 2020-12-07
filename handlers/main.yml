@@ -1,4 +1,4 @@
 ---
 - name: Reconfigure grub
-  become: yes
+  become: true
   command: update-grub

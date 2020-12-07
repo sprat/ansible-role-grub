@@ -1,6 +1,6 @@
 ---
 - name: Add grub configuration files
-  become: yes
+  become: true
   template:
     src: cfg.j2
     dest: "{{ grub_d_directory }}/{{ item.key }}.cfg"
@@ -15,7 +15,7 @@
     - grub
 
 - name: Remove grub configuration files
-  become: yes
+  become: true
   file:
     path: "{{ grub_d_directory }}/{{ item.key }}.cfg"
     state: absent

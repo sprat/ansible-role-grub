@@ -1,8 +1,8 @@
 Ansible Role: grub
 ==================
 
-[![Ansible Galaxy][galaxy_image]][galaxy_link]
-[![Build Status][travis_image]][travis_link]
+[![Build Status][build_badge]][build_link]
+[![Ansible Galaxy][galaxy_badge]][galaxy_link]
 
 Configure Grub on Ubuntu or Debian using the `/etc/default/grub.d` directory.
 
@@ -46,7 +46,7 @@ Author Information
 This role was created in 2020 by [Sylvain Prat](https://github.com/sprat).
 
 
-[travis_image]:  https://travis-ci.com/sprat/ansible-role-grub.svg?branch=master
-[travis_link]:   https://travis-ci.com/sprat/ansible-role-grub
-[galaxy_image]:  https://img.shields.io/badge/galaxy-sprat.grub-660198.svg?style=flat
-[galaxy_link]:   https://galaxy.ansible.com/sprat/grub
+[build_badge]:  https://travis-ci.com/sprat/ansible-role-grub.svg?branch=master
+[build_link]:   https://travis-ci.com/sprat/ansible-role-grub
+[galaxy_badge]: https://img.shields.io/ansible/role/52111
+[galaxy_link]:  https://galaxy.ansible.com/sprat/grub

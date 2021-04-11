@@ -2,6 +2,7 @@
 galaxy_info:
   author: Sylvain Prat
   role_name: grub
+  namespace: sprat
   description: Configure grub on Ubuntu or Debian
   license: MIT
   company: none
